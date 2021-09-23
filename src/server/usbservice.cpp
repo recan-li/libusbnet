@@ -32,6 +32,7 @@ UsbService::UsbService(int fd)
    // Disable TCP buffering
    int flag = 1;
    setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &flag, sizeof(int));
+   log_msg("UsbService: open device ");
 }
 
 UsbService::~UsbService()

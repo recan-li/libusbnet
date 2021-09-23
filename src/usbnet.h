@@ -27,6 +27,7 @@
 
 // Include original libusb header
 #include <usb.h>
+//#include "libusb.h"
 #include "protobase.h"
 
 /** libusb opcode definition.

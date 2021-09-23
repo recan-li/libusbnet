@@ -26,6 +26,7 @@ message(FATAL_ERROR "Please install 'libusb' library and development headers.\nR
 endif(NOT LIBUSB_FOUND)
 
 include_directories(${LIBUSB_INCLUDE_DIR})
+message("-- LIBUSB_CONST_BUFFERS: ${LIBUSB_CONST_BUFFERS}")
 if(${LIBUSB_CONST_BUFFERS})
    add_definitions(-DUSE_USB_CONST_BUFFERS)
 endif(${LIBUSB_CONST_BUFFERS})

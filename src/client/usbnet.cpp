@@ -129,7 +129,7 @@ int main(int argc, char* argv[])
    log_msg("Executing: %s", execs.c_str());
    std::string fill = "Executing: " + execs;
    fill = std::string(fill.length(), '-');
-   log_msg("%s", fill.c_str());
+   log_msg("(%s)", fill.c_str());
 
    int ret = system(execs.c_str());
    log_msg("%s", fill.c_str());

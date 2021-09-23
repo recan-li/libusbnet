@@ -13,7 +13,7 @@ set(sources_c protocol.c
               ${SHARED_DIR}/common.c
               )
 
-set(sources   protocol.cpp
+set(sources   protocol_cpp.cpp
               socket.cpp
               protobase.c
               ${SHARED_DIR}/common.c

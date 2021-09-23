@@ -77,7 +77,9 @@ void session_teardown() {
          cur->devices = dev->next;
 
          // Destroy configuration and free device
+#ifdef MISSING_USB_DESTROY_CONFIGURATION          
          usb_destroy_configuration(dev);
+#endif
          if(dev->children != NULL)
             free(dev->children);
          free(dev);

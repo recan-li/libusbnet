@@ -13,7 +13,8 @@ O_OBJ 					:= $(O)/objs
 
 ##################################################################################
 
-USBNET_SO_C_FILES 		+= ./src/usbnet.c
+USBNET_SO_C_FILES 		+= ./src/usbnet.c ./src/proto/protocol.c 
+USBNET_SO_C_FILES 		+= ./src/proto/protobase.c ./src/shared/common.c
 
 USBNET_C_FILES 			+= 
 USBNET_C_FILES 			+= $(wildcard ./src/client/*.c)
